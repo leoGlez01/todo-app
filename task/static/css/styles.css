@@ -1,0 +1,197 @@
+/*Scrollbar Styles*/
+.box::-webkit-scrollbar {
+    width: 5px;
+}
+.box::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.box::-webkit-scrollbar-thumb {
+    background-color: rgb(210, 210, 216);
+    border: none;
+    border-radius: 20px;
+}
+
+/*Global Styles*/
+body{
+    background-color: gray;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Plus Jakarta Display', sans-serif;
+    color: rgb(38, 58, 78);
+    font-size: 3em;
+}
+
+h3{
+    font-family: 'Plus Jakarta Display',sans-serif;
+    font-size: 3em;
+    color: #fff;
+}
+
+p{
+    font-family: 'Roboto Regular';
+    font-size: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto Regular';
+}
+
+button{
+    margin: 0 0 20px 0;
+    background-color: rgb(38, 58, 78);
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+}
+
+/*Generic Style for Horizontal Bars*/
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.form-group{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.form label{
+    font-size: 18px;
+    color: rgb(18, 32, 46);
+}
+
+input, textarea, select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+
+
+/*Specific Styles for our classes*/
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#search{
+    padding: 0;
+    margin-bottom: 0;
+    width: 55%;
+    height: 25%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 6px;
+}
+
+#search:focus{
+    outline: none;
+}
+
+#go{
+    width: 20%;
+    height: 27%;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: rgb(50, 72, 94);
+}
+
+#go:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+#add {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#add img{
+    width: 35px;
+    margin-right: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.action-task{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.delete {
+    margin-right: 10px;
+    width: 60px;
+    height: 100%;
+}
+
+.delete svg:hover{
+    fill: red;
+}
+
+.ver{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+.ver:hover{
+    color: rgb(28, 44, 59);
+}

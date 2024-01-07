@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<div style="padding: 15px;" class="container">
+<p style="color: rgb(38, 58, 78);">{{task.title}}:</p>
+<br>
+<p style="color: #fff; font-size: 12px; word-wrap: break-word;">{{task.body}}</p>
+</div>
+{% endblock %}

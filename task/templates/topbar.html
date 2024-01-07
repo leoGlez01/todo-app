@@ -1,0 +1,11 @@
+{% load static %}
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<div class="top bar">
+    <a style="margin: 0 0 0 20px;" href="/"><h1>PaDespue</h1></a>
+    <div class="actions">
+        <input type="search" placeholder="Search Task" id="search">
+        <a href="#" id="go" onclick="searchTask()">Go</a>
+        <a id="add" href="{% url 'add' %}"><img src="{% static 'img/add.png' %}" alt=""></a>
+    </div>
+</div>
