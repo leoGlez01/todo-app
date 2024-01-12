@@ -2,10 +2,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 <div class="top bar">
-    <a style="margin: 0 0 0 20px;" href="/"><h1>PaDespue</h1></a>
+    <a style="margin-left:20px;" href="/"><h1>PaDespue</h1></a>
     <div class="actions">
         <input type="search" placeholder="Search Task" id="search">
         <a href="#" id="go" onclick="searchTask()">Go</a>
-        <a id="add" href="{% url 'add' %}"><img src="{% static 'img/add.png' %}" alt=""></a>
+        <a id="add" href="{% url 'add' %}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="plus"><line class="cls-1" x1="16" x2="16" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="16" y2="16"/></g></svg></a>
     </div>
 </div>

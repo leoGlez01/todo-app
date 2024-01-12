@@ -13,13 +13,17 @@
 
 /*Global Styles*/
 body{
-    background-color: gray;
+    background-color: #4e497a;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 h1{
     font-family: 'Plus Jakarta Display', sans-serif;
-    color: rgb(38, 58, 78);
+    color: #a095f9;
     font-size: 3em;
 }
 
@@ -32,9 +36,11 @@ h3{
 p{
     font-family: 'Roboto Regular';
     font-size: 2em;
+    color: #fff;
 }
 
 a{
+    height: 100%;
     text-decoration: none;
     color: #fff;
     text-align: center;
@@ -42,16 +48,24 @@ a{
     flex-direction: column;
     justify-content: center;
     font-family: 'Roboto Regular';
+    font-size: 20px;
 }
 
 button{
     margin: 0 0 20px 0;
-    background-color: rgb(38, 58, 78);
+    background-color: #33304f;
     border: none;
     border-radius: 5px;
     width: 120px;
     height: 40px;
     color: #fff;
+}
+
+button:hover{
+    color: black;
+    background-color: rgb(231, 144, 231);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 /*Generic Style for Horizontal Bars*/
@@ -62,17 +76,6 @@ button{
     justify-content: space-between;
     width: 100%;
     height: 15%;
-}
-
-.container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-wrap: wrap;
-    width: 50%;
-    height: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .form{
@@ -103,11 +106,33 @@ input, textarea, select {
     padding: 10px;
     border-radius: 3px;
     border: none;
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 18px;
+}
+
+input:focus{
+    outline: none;
+}
+
+svg{
+    width: 100%;
+    height: 100%;
 }
 
 
-
 /*Specific Styles for our classes*/
+
+.main-content{
+    padding: 30px;
+    width:80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 .actions{
     display: flex;
     flex-direction: row;
@@ -118,26 +143,17 @@ input, textarea, select {
 }
 
 #search{
-    padding: 0;
-    margin-bottom: 0;
+    margin-top: 10px;
     width: 55%;
-    height: 25%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    padding-left: 6px;
-}
-
-#search:focus{
-    outline: none;
+    height: 50%;
 }
 
 #go{
     width: 20%;
-    height: 27%;
+    height: 50%;
     margin-left: 30px;
     border-radius: 5px;
-    background-color: rgb(50, 72, 94);
+    background-color: #33304f;
 }
 
 #go:hover{
@@ -146,37 +162,34 @@ input, textarea, select {
 
 #add {
     width: 20%;
+    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
 
-#add img{
-    width: 35px;
-    margin-right: 20px;
-}
-
 .box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    height: 85%;
+    height: 70%;
+    margin-top: 20px;
     scroll-behavior: smooth;
     overflow-y: scroll;
+    text-wrap: wrap;
 }
 
 .action-task{
-    margin: 0;
-    padding: 0;
     width: 20%;
     height: 100%;
 }
 
 .delete {
     margin-right: 10px;
-    width: 60px;
+    width: 30%;
     height: 100%;
 }
 
@@ -185,11 +198,7 @@ input, textarea, select {
 }
 
 .ver{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-size: 20px;
+    width: 70%;
 }
 
 .ver:hover{

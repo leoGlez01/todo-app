@@ -1,12 +1,11 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block content %}
 <div class="box" id="box">
-    <h3 style="align-self: flex-start; margin-left: 20px;">Tasks</h3>
     {% for task in tasks %}
-        <div style="height: 10%;" class="task bar">
-            <p style="margin: 0 0 0 20px;">{{task.title}}: {{task.body|truncatechars:20}}</p>
+        <div style="height: 20%;" class="task bar">
+            <p style="margin-left:20px;">{{task.title}}: {{task.body|truncatechars:20}}</p>
             <div class="action-task bar">
                 <a class="ver" href="{% url 'detail' task.id %}">See More</a>
                 <a class="delete" href="{% url 'delete' task.id %}"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="80%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve"><style type="text/css">

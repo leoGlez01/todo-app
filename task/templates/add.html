@@ -1,8 +1,8 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block content %}
-<div class="container">
+<div class="box">
     <form class="form" method="post">
         {% csrf_token %}
         {% for field in form %}

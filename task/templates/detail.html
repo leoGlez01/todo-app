@@ -1,10 +1,10 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block content %}
-<div style="padding: 15px;" class="container">
-<p style="color: rgb(38, 58, 78);">{{task.title}}:</p>
+<div class="box" style="align-items: flex-start;">
+<p style="margin-bottom: 0;color: rgb(189, 161, 240); margin-left: 20px;">{{task.title}}:</p>
 <br>
-<p style="color: #fff; font-size: 12px; word-wrap: break-word;">{{task.body}}</p>
+<p style="margin-top: 0;color: #fff; font-size: 24px; word-wrap: break-word; margin-left: 20px;">{{task.body}}</p>
 </div>
 {% endblock %}
