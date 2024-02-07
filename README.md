@@ -7,4 +7,4 @@ Django - Web Framework <br/>
 HTML, CSS, JavaScript
 
 ## Preview
-<img src="todoapp.png">
+<img src="todoapp.jpeg">
